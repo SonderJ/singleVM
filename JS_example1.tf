@@ -17,7 +17,7 @@ resource "ibm_compute_vm_instance" "JS_server_1" {
   domain            = "example.com"
   ssh_key_ids       = ["${ibm_compute_ssh_key.test_key_1.id}"]
   os_reference_code = "CENTOS_6_64"
-  datacenter        = "ams01"
+  datacenter        = "fra02"
   network_speed     = 10
   cores             = 1
   memory            = 1024
